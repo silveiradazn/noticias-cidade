@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias de Ciência</title>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #destaque, #ultimas-noticias, #entrevistas {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 48%;
+        }
+
+        #destaque h2, #ultimas-noticias h2, #entrevistas h2 {
+            margin-bottom: 20px;
+        }
+
+        .noticias {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .noticia {
+            width: 30%;
+            text-align: center;
+        }
+
+        .noticia img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .noticia h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        #entrevistas ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #entrevistas ul li {
+            margin-bottom: 10px;
+        }
+
+        #entrevistas ul li a {
+            color: #003366;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="topo">
+            <h1>Notícias Cidade - Ciência</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="tec1.html">Tecnologia</a></li>
+                <li><a href="sau1.html">Saúde</a></li>
+                <li><a href="cie1.html">Ciência</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destaque">
+            <h2>Destaque</h2>
+            <div class="noticia-destaque">
+                <img src="https://didatica.tech/wp-content/uploads/2024/03/descoberta-do-dna-300x300.jpg">
+                <h3>Nova Descoberta na Física</h3>
+                <p>Cientistas revelam uma nova partícula subatômica que pode mudar os rumos da física moderna.</p>
+            </div>
+        </section>
+
+        <section id="ultimas-noticias">
+            <h2>Últimas Notícias</h2>
+            <div class="noticias">
+                <div class="noticia">
+                    <img src="https://files.oaiusercontent.com/file-aV7A5N390mRE4naYaTt5YrEB?se=2024-10-17T17%3A02%3A16Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D39c358d9-c7a8-47fd-aa59-99c3158d9e49.webp&sig=KFvPCiQgEtAHxMeCUZ6wly3l4skdyUpwncEd42EwxW4%3D">
+                    <h3>Avanços em Biotecnologia</h3>
+                    <p>Novos tratamentos estão sendo desenvolvidos para doenças genéticas raras.</p>
+                </div>
+                <div class="noticia">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgt1x6iwy2DRUiKhgcKHsLnyybl5ziqro7bw&s">
+                    <h3>Pesquisa Espacial</h3>
+                    <p>Novas missões para Marte buscam encontrar sinais de vida microbiana.</p>
+                </div>
+                <div class="noticia">
+                    <img src="https://crea-am.org.br/creaam_site/wp-content/uploads/turbinas-eolicas-flutuante-1024x585-1.jpeg">
+                    <h3>Inovações em Energia Sustentável</h3>
+                    <p>Pesquisadores desenvolvem tecnologia para captar energia solar de maneira mais eficiente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="entrevistas">
+            <h2>Entrevistas</h2>
+            <ul>
+                <li><a href="PAULA.HTML">Entrevista com Dra. Paula Souza sobre o futuro da inteligência artificial</a></li>
+                <li><a href="CARLOS.html">Entrevista com Dr. Carlos Lima sobre mudanças climáticas</a></li>
+                <li><a href="ANA.html">Entrevista com Dra. Ana Pereira sobre as vacinas do futuro</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Notícias de Ciência. Todos os direitos reservados.</p>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</body>
+</html>
